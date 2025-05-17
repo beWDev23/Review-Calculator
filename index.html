@@ -12,11 +12,31 @@
 </head>
 <body>
   <h1>Review Rating Calculator</h1>
-  <label>5-Star Reviews: <input type="number" id="stars5" value="0" min="0"></label>
-  <label>4-Star Reviews: <input type="number" id="stars4" value="0" min="0"></label>
-  <label>3-Star Reviews: <input type="number" id="stars3" value="0" min="0"></label>
-  <label>2-Star Reviews: <input type="number" id="stars2" value="0" min="0"></label>
-  <label>1-Star Reviews: <input type="number" id="stars1" value="0" min="0"></label>
+  <label>
+    5-Star Reviews: <input type="number" id="stars5" value="0" min="0"
+      onfocus="if(this.value=='0') this.value='';"
+      onblur="if(this.value=='') this.value='0';">
+  </label>
+  <label>
+    4-Star Reviews: <input type="number" id="stars4" value="0" min="0"
+      onfocus="if(this.value=='0') this.value='';"
+      onblur="if(this.value=='') this.value='0';">
+  </label>
+  <label>
+    3-Star Reviews: <input type="number" id="stars3" value="0" min="0"
+      onfocus="if(this.value=='0') this.value='';"
+      onblur="if(this.value=='') this.value='0';">
+  </label>
+  <label>
+    2-Star Reviews: <input type="number" id="stars2" value="0" min="0"
+      onfocus="if(this.value=='0') this.value='';"
+      onblur="if(this.value=='') this.value='0';">
+  </label>
+  <label>
+    1-Star Reviews: <input type="number" id="stars1" value="0" min="0"
+      onfocus="if(this.value=='0') this.value='';"
+      onblur="if(this.value=='') this.value='0';">
+  </label>
   <button onclick="calculateRating()">Calculate Rating</button>
 
   <div id="result"></div>
